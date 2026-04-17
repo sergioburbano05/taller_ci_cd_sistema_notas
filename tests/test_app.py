@@ -21,7 +21,7 @@ def test_health_returns_200(client):
 def test_health_returns_service_name(client):
     response = client.get("/health")
 
-    assert response.get_json() == {"status": "ok", "service": "sistema-notas"}
+    assert response.get_json() == {"status": "ok", "service": "SERVICIO_INCORRECTO"}
 
 
 def test_student_summary_returns_existing_student(client):
